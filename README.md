@@ -1,4 +1,5 @@
 # Development Environment
+![alt text](https://github.com/kemalmao19/devShell/blob/main/gallery/shell.png?raw=true "Python DevShell")
 this repositori provide a way to create Development Environment using flake.nix
 
 ## Why Nix?
