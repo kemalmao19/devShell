@@ -38,8 +38,21 @@
             # Python plus helper tools
             (python.withPackages (ps:
               with ps; [
-                pandas
-                numpy
+              
+                #scientific computing
+                pandas # Data structures & tools
+                numpy # Array & matrices
+                scipy # Integral, solving differential, equations, optimizations)
+                
+                # Visualization
+                matplotlib # plot & graphs
+                seaborn # heat maps, time series, violin plot
+
+                # Algorithmic Libraries
+                scikit-learn-extra # Machine learning: regression, classificatons,..
+                statsmodels # Ecplore data, estimate statistical models, & perform statistical test.
+                
+                                
               ]))
           ];
         };
