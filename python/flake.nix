@@ -1,5 +1,5 @@
 {
-  description = "This is my python dev";
+  description = "This is my python dev: Data Science Libraries Edition";
 
   # Flake inputs
   inputs = {
@@ -24,9 +24,11 @@
     in {
       # Development environment output
       devShells = forAllSystems ({ pkgs }: {
-        default = let
+        default = 
+        let
           # Use Python 3.11
           python = pkgs.python311;
+          
         in pkgs.mkShell {
           # The Nix packages provided in the environment
           packages = [
@@ -34,7 +36,13 @@
             (python.withPackages (ps:
               with ps; [
 
-                #scientific computing
+                # notebook
+                jupyter
+                jupyterlab
+                ipykernel
+                ipython
+
+                # scientific computing
                 pandas # Data structures & tools
                 numpy # Array & matrices
                 scipy # Integral, solving differential, equations, optimizations)
