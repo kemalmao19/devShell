@@ -55,6 +55,9 @@
                 scikit-learn-extra # Machine learning: regression, classificatons,..
                 statsmodels # Ecplore data, estimate statistical models, & perform statistical test.
 
+                # Formatting
+                black
+
               ]))
           ];
         };
