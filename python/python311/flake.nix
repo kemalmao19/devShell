@@ -24,11 +24,10 @@
     in {
       # Development environment output
       devShells = forAllSystems ({ pkgs }: {
-        default = 
-        let
+        default = let
           # Use Python 3.11
           python = pkgs.python311;
-          
+
         in pkgs.mkShell {
           # The Nix packages provided in the environment
           packages = [
@@ -57,6 +56,16 @@
 
                 # Formatting
                 black
+
+                # Scraping
+                ## beautifulsoup4
+
+                # Environment
+                ## pypi2nixi
+                ## pip
+
+                # probabilistic
+                # pymc
 
               ]))
           ];
