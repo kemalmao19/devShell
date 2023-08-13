@@ -34,7 +34,7 @@
             # Python plus helper tools
             (python.withPackages (ps:
               with ps; [
-
+              
                 # notebook
                 jupyter
                 jupyterlab
@@ -57,15 +57,8 @@
                 # Formatting
                 black
 
-                # Scraping
-                ## beautifulsoup4
-
-                # Environment
-                ## pypi2nixi
-                ## pip
-
-                # probabilistic
-                # pymc
+                # Probabilistic
+                # pymc #support < 311
 
               ]))
           ];

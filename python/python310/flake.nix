@@ -58,6 +58,9 @@
                 # Formatting
                 black
 
+                # Probabilistic
+                pymc
+
               ]))
           ];
         };
